@@ -65,8 +65,19 @@ namespace P03AplikacjaPogodaClientAPI.ViewModels
             SearchCommand = new SearchCommand(this);
             accuWeatherTool = new AccuWeatherTool();
             Cities = new ObservableCollection<CityVM>();
+            //MouseEnterCommand = new DelegateCommand(mouseEnter, null);
+            MouseEnterCommand = new DelegateCommand(() =>
+            {
+                MainWindow.ShowText("mouse enter");
+            }, null);
         }
         public SearchCommand SearchCommand { get; set; }
+        public DelegateCommand MouseEnterCommand { get; set; }
+
+        //private void mouseEnter()
+        //{
+        //    MainWindow.ShowText("mouse enter");
+        //}
 
         public async void FindCities()
         {

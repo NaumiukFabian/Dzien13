@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P03AplikacjaPogodaClientAPI"
         mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:vm="clr-namespace:P03AplikacjaPogodaClientAPI.ViewModels"
         xmlns:converters="clr-namespace:P03AplikacjaPogodaClientAPI.ViewModels.Converters"
         Title="MainWindow" Height="450" Width="500">
@@ -19,7 +20,13 @@
         <StackPanel DockPanel.Dock="Left" Width="300">
             <Label Content="Podaj miasto"></Label>
             <TextBox x:Name="txtCity" Text="{Binding City, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
-            <Button x:Name="btnSearch" Command="{Binding SearchCommand}" CommandParameter="{Binding City}" Content="Szukaj"></Button>
+            <Button x:Name="btnSearch" Command="{Binding SearchCommand}" CommandParameter="{Binding City}" Content="Szukaj">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseEnter">
+                        <i:InvokeCommandAction Command="{Binding MouseEnterCommand}"></i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
             <!--<ListBox x:Name="lbData" DisplayMemberPath="LocalizedName"></ListBox>-->
             <!--<ScrollViewer>-->
                 <ListView Height="200" ItemsSource="{Binding Cities}" SelectedItem="{Binding SelectedCity}">
