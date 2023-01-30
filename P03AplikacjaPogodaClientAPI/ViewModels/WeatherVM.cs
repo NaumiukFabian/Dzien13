@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace P03AplikacjaPogodaClientAPI.ViewModels
 {
-    public class WeatherVM : INotifyPropertyChanged
+    public class WeatherVM : ViewModelBase
     {
         AccuWeatherTool accuWeatherTool;
         private string city;
@@ -42,12 +42,7 @@ namespace P03AplikacjaPogodaClientAPI.ViewModels
 
         private CurrentConditionsOfCityVM currentConditionsOfCityVM;
 
-        public event PropertyChangedEventHandler? PropertyChanged;
-
-        private void OnPropertyChange(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        
 
         public CurrentConditionsOfCityVM CurrentConditionsOfCityVM
         {
@@ -70,8 +65,14 @@ namespace P03AplikacjaPogodaClientAPI.ViewModels
             {
                 MainWindow.ShowText("mouse enter");
             }, null);
+
+            GoToShopCommand = new DelegateCommand(() =>
+            {
+                MainWindow.ShowShopWindow();
+            }, null);
         }
         public SearchCommand SearchCommand { get; set; }
+        public DelegateCommand GoToShopCommand { get; set; }
         public DelegateCommand MouseEnterCommand { get; set; }
 
         //private void mouseEnter()

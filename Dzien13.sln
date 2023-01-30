@@ -1,22 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03AplikacjaPogodaClientAPI", "P03AplikacjaPogodaClientAPI\P03AplikacjaPogodaClientAPI.csproj", "{D916563C-C5D7-4EBB-B41E-39BB4F0FC2CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03AplikacjaPogodaClientAPI", "P03AplikacjaPogodaClientAPI\P03AplikacjaPogodaClientAPI.csproj", "{D916563C-C5D7-4EBB-B41E-39BB4F0FC2CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04Sklep.API", "P04Sklep.API\P04Sklep.API.csproj", "{92119799-F203-4A24-A866-99E04BABDBB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05Sklep.Shared", "P05Sklep.Shared\P05Sklep.Shared.csproj", "{14DDE269-623B-4422-9E8B-07433DDFA1FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D916563C-C5D7-4EBB-B41E-39BB4F0FC2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D916563C-C5D7-4EBB-B41E-39BB4F0FC2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D916563C-C5D7-4EBB-B41E-39BB4F0FC2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D916563C-C5D7-4EBB-B41E-39BB4F0FC2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92119799-F203-4A24-A866-99E04BABDBB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92119799-F203-4A24-A866-99E04BABDBB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92119799-F203-4A24-A866-99E04BABDBB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92119799-F203-4A24-A866-99E04BABDBB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14DDE269-623B-4422-9E8B-07433DDFA1FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14DDE269-623B-4422-9E8B-07433DDFA1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14DDE269-623B-4422-9E8B-07433DDFA1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14DDE269-623B-4422-9E8B-07433DDFA1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C489350E-A069-4AB7-B36F-38BC650A7A6F}
 	EndGlobalSection
 EndGlobal
