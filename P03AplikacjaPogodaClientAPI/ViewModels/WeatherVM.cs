@@ -1,6 +1,7 @@
 ﻿using P03AplikacjaPogodaClientAPI.Models;
 using P03AplikacjaPogodaClientAPI.Tools;
 using P03AplikacjaPogodaClientAPI.ViewModels.Commands;
+using P05Sklep.Shared;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -109,5 +110,6 @@ namespace P03AplikacjaPogodaClientAPI.ViewModels
             }
             
         }
+
     }
 }

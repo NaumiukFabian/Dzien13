@@ -1,4 +1,5 @@
-﻿using P05Sklep.Shared;
+﻿using P03AplikacjaPogodaClientAPI.ViewModels.ProductViewModel;
+using P05Sklep.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,7 @@ namespace P03AplikacjaPogodaClientAPI
         public ShopWindow()
         {
             InitializeComponent();
+            ShopPanel.DataContext = new ProductWindowVM();
         }
 
         private async void btnShopApiTest_Click(object sender, RoutedEventArgs e)

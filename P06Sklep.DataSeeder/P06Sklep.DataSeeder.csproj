@@ -1,18 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Bogus" Version="34.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\P05Sklep.Shared\P05Sklep.Shared.csproj" />
-    <ProjectReference Include="..\P06Sklep.DataSeeder\P06Sklep.DataSeeder.csproj" />
   </ItemGroup>
 
 </Project>

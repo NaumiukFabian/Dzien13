@@ -4,9 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P03AplikacjaPogodaClientAPI"
+        xmlns:vm="clr-namespace:P03AplikacjaPogodaClientAPI.ViewModels.ProductViewModel"
         mc:Ignorable="d"
         Title="ShopWindow" Height="450" Width="800">
-    <StackPanel>
+
+    <!--<Window.Resources>
+        <vm:ProductWindowVM x:Key="vmData"></vm:ProductWindowVM>
+    </Window.Resources>-->
+    
+    <StackPanel x:Name="ShopPanel">
         <Button Content="Api test" x:Name="btnShopApiTest" Click="btnShopApiTest_Click"></Button>
+        <ListView Height="200" ItemsSource="{Binding Products}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding Title}"></Label>
+                        <Label Content="{Binding Description}"></Label>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackPanel>
 </Window>
